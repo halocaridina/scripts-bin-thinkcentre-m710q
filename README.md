@@ -1,2 +1,2 @@
-# scripts-bin-thinkpad-x250
-Scripts from Lenovo x250
+# scripts-bin-thinkcentre-m710q
+Scripts from Thinkcentre M710q

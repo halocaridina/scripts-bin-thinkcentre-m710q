@@ -16,10 +16,10 @@ then
     /usr/bin/touch /tmp/touchscreen_toggled.pid && /usr/bin/echo "1" > /tmp/touchscreen_toggled.lock
     /usr/bin/chown srsantos:srsantos /tmp/touchscreen_toggled.*
     /usr/bin/xinput disable $ID
-    /usr/bin/notify-send -i /usr/share/icons/touchscreen/touch_icon_white.png 'Touchscreen' 'Disabled' --expire-time=4000
+    /usr/bin/notify-send 'Touchscreen' 'Disabled' --expire-time=4000
 else
     /usr/bin/rm -f /tmp/touchscreen_toggled.*
     /usr/bin/xinput enable $ID
-    /usr/bin/notify-send -i /usr/share/icons/touchscreen/touch_icon_white.png 'Touchscreen' 'Enabled' --expire-time=4000
+    /usr/bin/notify-send 'Touchscreen' 'Enabled' --expire-time=4000
 fi
 
